@@ -13,5 +13,6 @@ class RegistrationForm(FlaskForm):
     confirm_pswd = PasswordField('confirm_pswd_label',
                           validators=[InputRequired(message="Password required"),
                           EqualTo('password',message="Passwords must match")])
-submit_button=SubmitField('Create')
+       
+    submit_button=SubmitField('Create')
     
